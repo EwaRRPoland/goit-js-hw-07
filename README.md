@@ -44,18 +44,12 @@ Utworzy oddzielny element ``<li>``. Pamiętaj, aby użyć metody ``document.crea
 Doda nazwę składnika jako jego zawartość tekstową.
 Doda klasę ``item`` do elementu.
 Wstawi wszystkie ``<li>`` w jednej operacji do listy ``ul#ingredients``.
-
 <br>
 Zadanie 3
 <br>
 Napisz skrypt tworzący galerię obrazów na podstawie zestawu danych. Kod HTML zawiera listę ``ul.gallery``.
 
-
-
 ![image](https://github.com/EwaRRPoland/goit-js-hw-07/assets/151127505/1fb4623a-1980-4fb4-aea2-d79fc79cbfd1)
-
-
-
 <br>
 Użyj tablicy obiektów images, aby utworzyć elementy ``<img>``, zagnieżdżone w ``<li>``. Użyj łańcuchów szablonów i metody ``insertAdjacentHTML()``, aby utworzyć znaczniki.
 <br>
