@@ -22,3 +22,27 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+ /* Ustawiamy rodzica (o klasie "gallery") na siatkę */
+ .gallery {
+   display: grid;
+   /* Tworzymy siatkę, która automatycznie dopasowuje tak wiele kolumn o minimalnej szerokości 50px, jak to możliwe */
+   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+   /* Dodajemy 10px przerwy między elementami */
+   gap: 10px;
+ }
+
+ /* Stylizujemy obrazki wewnątrz elementów o klasie "item" */
+ .gallery .item img {
+   /* Szerokość obrazka wynosi 100% szerokości jego rodzica */
+   width: 100%;
+   /* Wysokość obrazka jest automatycznie dostosowywana, aby zachować proporcje obrazka */
+   height: auto;
+   /* Obrazek pokrywa cały obszar elementu, zachowując proporcje */
+   object-fit: cover;
+ }
+
+ /*Usuwamy kropki, które  są domyślnymi znacznikami dla elementów listy <li> w HTML. 
+        Są one domyślnie dodawane przez przeglądarki do elementów listy, które są bezpośrednimi dziećmi elementu <ul>*/
+ .gallery .item {
+   list-style: none;
+ }
