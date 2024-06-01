@@ -11,6 +11,9 @@ const ingredients = [
   'Condiments',
 ];
 
+// Tworzymy nowy fragment dokumentu i zapisujemy go w zmiennej "docFragment".
+const docFragment = document.createDocumentFragment();
+
 // Dla każdego składnika w tablicy wykonujemy następujące operacje.
 ingredients.forEach(ingredient => {
   // Tworzymy nowy element "li" i zapisujemy go w zmiennej "liElement".
@@ -22,7 +25,9 @@ ingredients.forEach(ingredient => {
   // Dodajemy klasę "item" do elementu "li".
   liElement.classList.add("item");
 
-  // Dodajemy element "li" do listy "ul".
-  ulList.append(liElement);
-
+  // Dodajemy element "li" do fragmentu dokumentu.
+  docFragment.appendChild(liElement);
 });
+
+// Dodajemy fragment dokumentu do listy "ul".
+ulList.appendChild(docFragment);
